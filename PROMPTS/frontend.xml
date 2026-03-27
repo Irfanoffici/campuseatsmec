@@ -1,0 +1,105 @@
+<FRONTEND_PROMPT>
+  <PROJECT_NAME>CampusEats MEC</PROJECT_NAME>
+
+  <GOAL>
+    Build a premium, Swiggy/UberEats-level food ordering web interface exclusively for a college campus.
+    The interface must feel smooth, calm, modern, pastel-themed, animated, and professional.
+  </GOAL>
+
+  <DESIGN_LANGUAGE>
+    <STYLE>Modern food delivery app</STYLE>
+    <COLOR_SCHEME>
+      Soft pastels only (peach, cream, mint, sage, muted orange)
+      No harsh contrast, no neon, no dark blacks
+    </COLOR_SCHEME>
+    <LAYOUT>
+      Card-based
+      Floating sections
+      Rounded corners
+      Soft shadows
+      Generous spacing
+    </LAYOUT>
+    <DEPTH>
+      Subtle blur
+      Light glassmorphism
+      Elevation on hover
+    </DEPTH>
+  </DESIGN_LANGUAGE>
+
+  <MOTION_AND_ANIMATION>
+    <PAGE_TRANSITIONS>Smooth fade + slide with easing</PAGE_TRANSITIONS>
+    <MICRO_INTERACTIONS>
+      Hover lift
+      Button ripple
+      Add-to-cart pop
+      Quantity soft bounce
+    </MICRO_INTERACTIONS>
+    <MENU_ANIMATION>
+      Staggered card entry
+      Smooth category scroll
+    </MENU_ANIMATION>
+    <LOGIN_EFFECTS>
+      Soft entry animation
+      Success pulse on login
+    </LOGIN_EFFECTS>
+    <SOUND_EFFECTS>
+      Very subtle click
+      Order placed confirmation
+      Pickup success
+    </SOUND_EFFECTS>
+  </MOTION_AND_ANIMATION>
+
+  <PAGES>
+    <HOME>
+      Professional food-app style homepage
+      Hero section
+      Category carousel
+      Featured items
+      Live availability badges
+    </HOME>
+
+    <MENU>
+      Animated food cards
+      Hover effects
+      Availability indicators
+      Group order indicator
+    </MENU>
+
+    <CART_AND_CHECKOUT>
+      Clean summary
+      Animated transitions
+      Payment selector (RFID / QR)
+      Confirmation animation
+    </CART_AND_CHECKOUT>
+
+    <ORDER_STATUS>
+      Visual progress
+      Pickup prompt
+      Calm feedback animations
+    </ORDER_STATUS>
+
+    <PORTALS>
+      <STUDENT>
+        Dashboard
+        Wallet card
+        Order history timeline
+      </STUDENT>
+      <VENDOR>
+        Minimal fast interface
+        Order queue cards
+        One-tap status updates
+      </VENDOR>
+      <ADMIN>
+        Clean tables
+        Soft charts
+        Professional layout
+      </ADMIN>
+    </PORTALS>
+  </PAGES>
+
+  <TECH_EXPECTATION>
+    Modern frontend stack capable of advanced animations
+    GPU-accelerated transitions
+    Mobile-first responsive design
+  </TECH_EXPECTATION>
+</FRONTEND_PROMPT>

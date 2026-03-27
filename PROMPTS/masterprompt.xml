@@ -1,0 +1,227 @@
+<MASTER_PROMPT>
+  <PROJECT>
+    <NAME>CampusEats MEC</NAME>
+    <TYPE>Campus-exclusive food ordering and payment web platform</TYPE>
+    <SCOPE>
+      Fully functional frontend, backend, authentication, and database
+      with production-grade UI, animations, and smooth interactions.
+    </SCOPE>
+  </PROJECT>
+
+  <CORE_OBJECTIVE>
+    Build a Swiggy / UberEats–level food ordering experience for a college campus
+    where interface quality, smooth motion, and usability are treated as first-class requirements.
+    The system must feel premium, calm, modern, and highly interactive.
+  </CORE_OBJECTIVE>
+
+  <TECH_STACK>
+    <FRONTEND>
+      Modern component-based web framework
+      Mobile-first responsive design
+      GPU-accelerated animations
+      Support for advanced motion libraries
+    </FRONTEND>
+    <AUTHENTICATION>
+      <PROVIDER>Supabase Auth</PROVIDER>
+      <ROLE_BASED_ACCESS>
+        Student
+        Vendor
+        Admin
+      </ROLE_BASED_ACCESS>
+    </AUTHENTICATION>
+    <DATABASE>
+      <PROVIDER>Firebase</PROVIDER>
+      <TYPE>Realtime / Firestore</TYPE>
+    </DATABASE>
+  </TECH_STACK>
+
+  <DESIGN_LANGUAGE>
+    <STYLE>Professional modern food-delivery application</STYLE>
+    <COLOR_SYSTEM>
+      Soft pastel palette only
+      Peach, cream, mint, sage, muted orange
+      No harsh contrast, no neon, no deep blacks
+    </COLOR_SYSTEM>
+    <LAYOUT>
+      Card-based UI
+      Floating sections
+      Rounded corners
+      Soft shadows
+      Generous spacing
+    </LAYOUT>
+    <VISUAL_DEPTH>
+      Subtle elevation
+      Light blur
+      Gentle glassmorphism accents
+    </VISUAL_DEPTH>
+  </DESIGN_LANGUAGE>
+
+  <MOTION_AND_INTERACTION>
+    <PAGE_TRANSITIONS>
+      Smooth fade and slide
+      Natural easing curves
+      No abrupt cuts
+    </PAGE_TRANSITIONS>
+    <MICRO_INTERACTIONS>
+      Hover lift with shadow
+      Button ripple or pulse
+      Add-to-cart pop animation
+      Quantity increment soft bounce
+    </MICRO_INTERACTIONS>
+    <CONTENT_ANIMATION>
+      Staggered menu item entry
+      Smooth horizontal category scroll
+      Floating card appearance
+    </CONTENT_ANIMATION>
+    <LOGIN_EFFECTS>
+      Calm entry animation
+      Success pulse on authentication
+    </LOGIN_EFFECTS>
+    <SOUND_FEEDBACK>
+      Very subtle click sounds
+      Order placed confirmation
+      Pickup confirmation
+    </SOUND_FEEDBACK>
+  </MOTION_AND_INTERACTION>
+
+  <APPLICATION_PAGES>
+    <HOME>
+      Professional food-app homepage
+      Hero section
+      Category carousel
+      Featured items
+      Live availability indicators
+    </HOME>
+
+    <MENU>
+      Animated food cards
+      Hover effects
+      Availability badges
+      Group order indicators
+    </MENU>
+
+    <CART_AND_CHECKOUT>
+      Clean order summary
+      Animated transitions
+      Payment mode selector
+      Confirmation animation
+    </CART_AND_CHECKOUT>
+
+    <ORDER_STATUS>
+      Visual progress indicator
+      Pickup prompt
+      Calm success feedback
+    </ORDER_STATUS>
+  </APPLICATION_PAGES>
+
+  <PORTALS>
+    <STUDENT_PORTAL>
+      Dashboard
+      Wallet balance card
+      Order history timeline
+    </STUDENT_PORTAL>
+
+    <VENDOR_PORTAL>
+      Minimal and fast UI
+      Live order queue
+      One-tap status updates
+    </VENDOR_PORTAL>
+
+    <ADMIN_PORTAL>
+      Clean tables
+      Soft analytics visuals
+      Professional management interface
+    </ADMIN_PORTAL>
+  </PORTALS>
+
+  <BUSINESS_LOGIC>
+    <ORDER_FLOW>
+      Student places order
+      Vendor accepts order
+      Vendor marks order ready
+      Pickup confirmation required
+      Payment deducted only after pickup
+    </ORDER_FLOW>
+
+    <PAYMENT_SYSTEM>
+      <RFID>
+        Each student linked to a unique RFID UID
+        Wallet balance tied to RFID
+        Deduction occurs only after successful pickup
+      </RFID>
+      <QR_PAYMENT>
+        Demo QR / UPI fallback
+        Used if RFID unavailable
+      </QR_PAYMENT>
+    </PAYMENT_SYSTEM>
+
+    <GROUP_ORDERING>
+      Allow multiple students to link orders
+      Orders bundled for preparation
+      Food served together
+    </GROUP_ORDERING>
+  </BUSINESS_LOGIC>
+
+  <DATABASE_STRUCTURE>
+    <COLLECTION name="users">
+      user_id
+      name
+      role
+      rfid_uid
+      wallet_balance
+    </COLLECTION>
+
+    <COLLECTION name="vendors">
+      vendor_id
+      name
+      menu_items
+      status
+    </COLLECTION>
+
+    <COLLECTION name="menu_items">
+      item_id
+      vendor_id
+      name
+      price
+      available
+    </COLLECTION>
+
+    <COLLECTION name="orders">
+      order_id
+      user_id
+      vendor_id
+      items
+      status
+      payment_method
+      created_at
+      picked_up_at
+    </COLLECTION>
+
+    <COLLECTION name="transactions">
+      transaction_id
+      order_id
+      user_id
+      amount
+      method
+      timestamp
+    </COLLECTION>
+
+    <COLLECTION name="group_orders">
+      group_id
+      linked_orders
+      status
+    </COLLECTION>
+  </DATABASE_STRUCTURE>
+
+  <SECURITY_RULES>
+    Role-based access enforcement
+    Wallet mutations allowed only via backend logic
+    Order state locked after pickup confirmation
+  </SECURITY_RULES>
+
+  <QUALITY_EXPECTATION>
+    The final system must feel premium, fluid, and modern.
+    Interface smoothness and animation quality are as important as functionality.
+    No feature is considered complete unless it feels polished.
+  </QUALITY_EXPECTATION>
+</MASTER_PROMPT>

@@ -1,0 +1,63 @@
+<DATABASE_PROMPT>
+  <DATABASE>Firebase</DATABASE>
+
+  <GOAL>
+    Design a clean, scalable database structure for a campus food ordering system.
+  </GOAL>
+
+  <COLLECTIONS>
+    <USERS>
+      user_id
+      name
+      role (student/vendor/admin)
+      rfid_uid
+      wallet_balance
+    </USERS>
+
+    <VENDORS>
+      vendor_id
+      name
+      menu_items
+      availability_status
+    </VENDORS>
+
+    <MENU_ITEMS>
+      item_id
+      vendor_id
+      name
+      price
+      available
+    </MENU_ITEMS>
+
+    <ORDERS>
+      order_id
+      user_id
+      vendor_id
+      items
+      status
+      payment_method
+      created_at
+      picked_up_at
+    </ORDERS>
+
+    <TRANSACTIONS>
+      transaction_id
+      order_id
+      user_id
+      amount
+      method
+      timestamp
+    </TRANSACTIONS>
+
+    <GROUP_ORDERS>
+      group_id
+      linked_orders
+      status
+    </GROUP_ORDERS>
+  </COLLECTIONS>
+
+  <RULES>
+    Wallet updates only via backend
+    Order status immutable after pickup
+  </RULES>
+</DATABASE_PROMPT>

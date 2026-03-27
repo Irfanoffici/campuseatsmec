@@ -1,0 +1,58 @@
+<BACKEND_PROMPT>
+  <PROJECT_NAME>CampusEats MEC</PROJECT_NAME>
+
+  <GOAL>
+    Build a reliable backend that supports ordering, wallet deduction,
+    RFID-based pickup confirmation, and role-based portals.
+  </GOAL>
+
+  <AUTHENTICATION>
+    <PROVIDER>Supabase Auth</PROVIDER>
+    <ROLES>
+      Student
+      Vendor
+      Admin
+    </ROLES>
+    <LOGIN_METHODS>
+      Email / College ID
+      Role-based access
+    </LOGIN_METHODS>
+  </AUTHENTICATION>
+
+  <ORDER_FLOW>
+    <STEP_1>Student places order</STEP_1>
+    <STEP_2>Vendor accepts order</STEP_2>
+    <STEP_3>Order marked ready</STEP_3>
+    <STEP_4>Pickup confirmation (RFID or QR)</STEP_4>
+    <STEP_5>Wallet deduction</STEP_5>
+  </ORDER_FLOW>
+
+  <PAYMENT_LOGIC>
+    <RFID>
+      Linked to student account
+      Deduct ONLY after pickup confirmation
+    </RFID>
+    <QR>
+      Demo payment flow
+      Fallback if RFID unavailable
+    </QR>
+  </PAYMENT_LOGIC>
+
+  <GROUP_ORDER>
+    Allow multiple students to link orders
+    Bundle preparation
+    Serve together
+  </GROUP_ORDER>
+
+  <NOTIFICATIONS>
+    Order accepted
+    Order ready
+    Pickup confirmation
+  </NOTIFICATIONS>
+
+  <SECURITY>
+    Role-based access control
+    Server-side validation
+    No client-side wallet mutation
+  </SECURITY>
+</BACKEND_PROMPT>
